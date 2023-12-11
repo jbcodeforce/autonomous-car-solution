@@ -1,0 +1,11 @@
+@startuml kc-usecases
+!includeurl  https://raw.githubusercontent.com/plantuml-stdlib/C4-PlantUML/master/C4_Context.puml 
+scale 2
+left to right direction
+Person(Traveller,"Traveller")
+System_Ext(Payment,"Payment Service")
+System(vms,"Autonomous Car Ride Solution")
+title System Context for Autonomous Car Ride
+Rel(Traveller,vms,"Uses")
+Rel(vms,Payment,"Uses","HTTP")
+@enduml

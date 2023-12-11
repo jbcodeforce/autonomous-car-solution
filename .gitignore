@@ -1,0 +1,4 @@
+CarRideSimulator/.aws-sam/
+CarRideManager/database/
+**/cdk.out/*
+**/database/*
